@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Css links-->
+
+    <link rel="stylesheet" href="./dist/output.css" />
+    <title>MINT</title>
+  </head>
+  <body class="font-primary">
+    <!--Start header-->
+
+    <header
+      class="z-40 w-full top-0 left-0 pb-4 transition-all duration-300 ease-in-out"
+    >
+      <div
+        class="container md:flex justify-between items-center md:static relative"
+      >
+        <div
+          class="flex justify-between items-center md:w-1/3 md:static relative z-10 md:bg-transparent bg-white pt-4"
+        >
+          <div>
+            <img src="./src/imgs/LOGO.png" alt="logo" class="w-16 h-10" />
+          </div>
+          <svg
+            class="w-8 h-8 cursor-pointer md:hidden"
+            id="menu-btn"
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-6 w-6"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16m-7 6h7"
+            />
+          </svg>
+        </div>
+        <nav
+          class="uppercase font-medium pt-4 md:bg-transparent bg-white md:static absolute top:0 left-0 md:-translate-y-0 -translate-y-full md:w-auto w-full transition-transform ease-in-out duration-700 z-0"
+        >
+          <ul class="md:flex">
+            <li class="lg:mr-9 border-main-0 nav-li">
+              <a href="#" data-target="work" class="nav-link">work</a>
+            </li>
+            <li class="lg:mx-9 border-gray-100 nav-li">
+              <a href="#" data-target="about" class="nav-link">about</a>
+            </li>
+            <li class="lg:mx-9 border-gray-100 nav-li">
+              <a href="#" data-target="blog" class="nav-link">blog</a>
+            </li>
+            <li class="lg:mx-9 border-gray-100 nav-li">
+              <a data-target="contact" href="#" class="nav-link">contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!--End header-->
+
+    <!--Start main-->
+
+    <main class="my-24 py-8 relative">
+      <div
+        class="absolute top-0 left-0 w-full h-full bg-[url('../src/imgs/hero-img.jpg')] bg-cover md:hidden -z-10"
+      >
+        <div
+          class="absolute top-0 left-0 w-full h-full bg-white opacity-75 bg-cover md:hidden -z-10"
+        ></div>
+      </div>
+      <div
+        class="container md:grid md:grid-cols-2 gap-4 justify-between items-center"
+      >
+        <div class="md:full text-center md:text-left">
+          <h1
+            class="xl:text-6xl lg:text-4xl md:text-2xl text-2xl font-extrabold capitalize leading-10 lg:mb-6 mb-4"
+          >
+            Hello!!!<br />we are creative<br />
+            digital agency
+          </h1>
+          <p class="font-medium text-xs leading-6 mb-8">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et animi
+            voluptatibus quia labore corrupti quasi!
+          </p>
+          <div>
+            <a href="#" class="btn p-4">send message</a>
+          </div>
+        </div>
+        <img
+          src="./src/imgs/hero-img.jpg"
+          alt=""
+          class="md:w-full hidden md:block w-full h-full object-cover"
+        />
+      </div>
+    </main>
+
+    <!--End main-->
+
+    <!--Start work-->
+
+    <section class="my-24 py-20" id="work">
+      <div class="container h-full">
+        <h2 class="section-title">work showcase.</h2>
+        <div
+          class="btn-container text-xs font-bold text-center md:text-left mb-10"
+        >
+          <button id="all" class="work-btn btn-active">all</button>
+          <button id="branding" class="work-btn">branding</button>
+          <button id="illustration" class="work-btn">illustration</button>
+          <button id="web" class="work-btn mt-2">web</button>
+        </div>
+        <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+          <article data-id="branding" class="relative md:row-span-2">
+            <div class="yellow-hover hover:opacity-100">
+              <h3 class="uppercase text-xl font-extrabold mb-4">artwork</h3>
+              <p class="uppercase text-xs font-bold">branding</p>
+            </div>
+            <img src="./src/imgs/branding1.jpg" alt="" class="work-img" />
+          </article>
+          <article data-id="branding" class="relative md:row-span-3">
+            <div class="yellow-hover hover:opacity-100">
+              <h3 class="uppercase text-xl font-extrabold mb-4">artwork</h3>
+              <p class="uppercase text-xs font-bold">branding</p>
+            </div>
+            <img src="./src/imgs/branding2.jpg" alt="" class="work-img" />
+          </article>
+          <article data-id="illustration" class="relative md:row-span-2">
+            <img src="./src/imgs/illustration1.jpg" alt="" class="work-img" />
+            <div class="yellow-hover hover:opacity-100">
+              <h3 class="uppercase text-xl font-extrabold mb-4">artwork</h3>
+              <p class="uppercase text-xs font-bold">illustration</p>
+            </div>
+          </article>
+          <article data-id="illustration" class="relative md:row-span-3">
+            <img src="./src/imgs/illustration2.jpg" alt="" class="work-img" />
+            <div class="yellow-hover hover:opacity-100">
+              <h3 class="uppercase text-xl font-extrabold mb-4">artwork</h3>
+              <p class="uppercase text-xs font-bold">illustration</p>
+            </div>
+          </article>
+          <article data-id="web" class="relative md:row-span-3">
+            <img src="./src/imgs/web1.jpg" alt="" class="work-img" />
+            <div class="yellow-hover hover:opacity-100">
+              <h3 class="uppercase text-xl font-extrabold mb-4">artwork</h3>
+              <p class="uppercase text-xs font-bold">web</p>
+            </div>
+          </article>
+          <article data-id="web" class="relative md:row-span-2">
+            <img src="./src/imgs/web2.jpg" alt="" class="work-img" />
+            <div class="yellow-hover hover:opacity-100">
+              <h3 class="uppercase text-xl font-extrabold mb-4">artwork</h3>
+              <p class="uppercase text-xs font-bold">web</p>
+            </div>
+          </article>
+        </div>
+        <div class="text-center h-12">
+          <a href="#" class="btn mt-10 inline-block">show more</a>
+        </div>
+      </div>
+    </section>
+
+    <!--End work-->
+
+    <!--Start trusted by-->
+
+    <div class="my-24 py-8">
+      <div class="container">
+        <h2 class="section-title">trusted by.</h2>
+      </div>
+      <div class="bg-gray-50">
+        <div
+          class="container grid lg:grid-cols-6 sm:grid-cols-3 grid-cols-1 gap-8 justify-center items-center mt-12 py-10"
+        >
+          <img src="./src/imgs/partner 1.png" alt="" class="partner" />
+          <img src="./src/imgs/partner 2.png" alt="" class="partner" />
+          <img src="./src/imgs/partner 3.png" alt="" class="partner" />
+          <img src="./src/imgs/partner 4.png" alt="" class="partner" />
+          <img src="./src/imgs/partner 5.png" alt="" class="partner" />
+          <img src="./src/imgs/partner 6.png" alt="" class="partner" />
+        </div>
+      </div>
+    </div>
+
+    <!--End trusted by-->
+
+    <!--Start about-->
+
+    <section class="my-24 py-8" id="about">
+      <div class="container py-8">
+        <h2 class="section-title">about us.</h2>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+          tempore repellendus numquam repudiandae dicta natus error quo ea
+          distinctio corporis.
+        </p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="relative person overflow-hidden">
+            <img
+              src="./src/imgs/man1.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="lg:block hidden absolute top-0 left-0 w-full h-full bg-gray-900 opacity-80 transition duration-500 ease-in-out"
+            ></div>
+            <span
+              class="absolute bottom-0 left-0 bg-main-0 opacity-100 py-4 w-4/6 lg:translate-y-full transition duration-500 ease-in-out"
+            >
+              <h3 class="ml-4 capitalize text-lg font-extrabold">
+                luke skywalker
+              </h3>
+              <p class="ml-4 capitalize text-lg font-medium text-white">
+                web designer
+              </p>
+            </span>
+          </article>
+          <article class="relative person overflow-hidden">
+            <img
+              src="./src/imgs/man2.jpg"
+              alt=""
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="lg:block hidden absolute top-0 left-0 w-full h-full bg-gray-900 opacity-80 transition duration-500 ease-in-out"
+            ></div>
+            <span
+              class="absolute bottom-0 left-0 bg-main-0 py-4 w-4/6 lg:translate-y-full transition duration-500 ease-in-out"
+            >
+              <h3 class="ml-4 capitalize text-lg font-extrabold">
+                luke skywalker
+              </h3>
+              <p class="ml-4 capitalize text-lg font-medium text-white">
+                web designer
+              </p>
+            </span>
+          </article>
+          <article class="place-self-center p-8 sm:col-span-2 lg:col-span-1">
+            <h3 class="capitalize text-xl font-extrabold my-8">
+              little about us
+            </h3>
+            <p class="text-xs font-bold leading-6">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+              enim omnis iusto minima a nihil? Impedit dolor placeat debitis
+              facilis!
+            </p>
+            <a
+              href="#"
+              class="capitalize text-sm font-bold relative inline-block pb-1 my-8 after:content-[''] after:absolute after:bottom-0 after:left-0 lg:after:w-0 after:w-full after:h-0.5 after:bg-gray-800 hover:after:w-full aftre:transition-all after:duration-300 after:ease-in-out"
+              >read more</a
+            >
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!--End about-->
+
+    <!--Start blog-->
+
+    <section id="blog" class="bg-gray-50 my-24 py-20">
+      <div class="container">
+        <h2 class="section-title">our blog.</h2>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Necessitatibus accusamus odit quis minima voluptatibus in.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <article class="bg-white height-full overflow-hidden">
+            <div class="h-3/5 relative">
+              <div class="blog-hover -translate-x-full">
+                <a
+                  href="#"
+                  class="uppercase text-2xl font-extrabold w-full h-full flex justify-center items-center"
+                  >read more</a
+                >
+              </div>
+              <img
+                src="./src/imgs/blog1.jpg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="px-4 h-2/6 flex flex-col justify-around items-left">
+              <h3 class="uppercase text-base font-extrabold">
+                <a href="#">super blog article!</a>
+              </h3>
+              <p class="text-xs font-bold">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+                praesentium?
+              </p>
+              <span class="capitalize text-xs font-bold text-gray-500"
+                >20 may 2020</span
+              >
+            </div>
+          </article>
+          <article class="bg-white height-full overflow-hidden">
+            <div class="h-3/5 relative">
+              <div class="blog-hover -translate-x-full">
+                <a
+                  href="#"
+                  class="uppercase text-2xl font-extrabold w-full h-full flex justify-center items-center"
+                  >read more</a
+                >
+              </div>
+              <img
+                src="./src/imgs/blog2.jpg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="px-4 h-2/6 flex flex-col justify-around items-left">
+              <h3 class="uppercase text-base font-extrabold">
+                <a href="#">super blog article!</a>
+              </h3>
+              <p class="text-xs font-bold">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+                praesentium?
+              </p>
+              <span class="capitalize text-xs font-bold text-gray-500"
+                >20 may 2020</span
+              >
+            </div>
+          </article>
+          <article class="bg-white height-full overflow-hidden">
+            <div class="h-3/5 relative">
+              <div class="blog-hover -translate-x-full">
+                <a
+                  href="#"
+                  class="uppercase text-2xl font-extrabold w-full h-full flex justify-center items-center"
+                  >read more</a
+                >
+              </div>
+              <img
+                src="./src/imgs/blog3.jpg"
+                alt=""
+                class="w-full h-full object-cover"
+              />
+            </div>
+            <div class="px-4 h-2/6 flex flex-col justify-around items-left">
+              <h3 class="uppercase text-base font-extrabold">
+                <a href="#">super blog article!</a>
+              </h3>
+              <p class="text-xs font-bold">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga,
+                praesentium?
+              </p>
+              <span class="capitalize text-xs font-bold text-gray-500"
+                >20 may 2020</span
+              >
+            </div>
+          </article>
+        </div>
+        <div class="text-center my-4">
+          <a href="#" class="btn mt-10 inline-block">show more</a>
+        </div>
+      </div>
+    </section>
+
+    <!--End blog-->
+
+    <!--Start contact-->
+
+    <section id="contact" class="my-24">
+      <div class="container w-full">
+        <h2 class="section-title">contact us.</h2>
+        <p class="paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+          adipisci laborum sint odit officiis quod?
+        </p>
+        <div
+          class="text-center md:text-left grid md:grid-cols-2 grid-cols-1 gap-8 justify-center items-center"
+        >
+          <div>
+            <h3 class="capitalize my-6 text-xl font-extrabold">
+              send us message.
+            </h3>
+            <form action="" method="post">
+              <input type="text" placeholder="Name" class="input-field" />
+              <input type="email" placeholder="Email" class="input-field" />
+              <textarea
+                name="message"
+                id="msg"
+                placeholder="Message"
+                class="input-field h-40"
+              ></textarea>
+              <input type="submit" value="send message" class="btn mb-4" />
+            </form>
+          </div>
+          <img
+            src="./src/imgs/contact-img.jpg"
+            alt="contact"
+            class="hidden md:block w-full h-full object-cover"
+          />
+        </div>
+        <div class="grid gap-8 sm:grid-cols-3 grid-cols-1 py-20">
+          <div class="text-center flex flex-col items-center">
+            <img src="./src/imgs/pin.png" alt="pin" class="mb-4" />
+            <span class="capitalize text-xs font-bold"
+              >1211 awesome avenue,<br /><span class="uppercase"
+                >ny usd</span
+              ></span
+            >
+          </div>
+          <div class="text-center flex flex-col items-center">
+            <img
+              src="./src/imgs/smartphone.png"
+              alt="smartphone"
+              class="mb-4"
+            />
+            <span class="capitalize text-xs font-bold"
+              >+00 123 - 456 - 78<br />+00 123 - 456 - 78
+            </span>
+          </div>
+          <div class="text-center flex flex-col items-center">
+            <img src="./src/imgs/web.png" alt="web" class="mb-4" />
+            <span class="capitalize text-xs font-bold">mint@mintmail.com</span>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="w-10 h-10 mx-6 inline-block">
+            <img
+              src="./src/imgs/facebook.svg"
+              alt="facebook"
+              class="w-10 h-10"
+            />
+          </a>
+          <a href="#" class="w-10 h-10 mx-6 inline-block">
+            <img src="./src/imgs/twitter.svg" alt="twitter" class="w-10 h-10" />
+          </a>
+          <a href="#" class="w-10 h-10 mx-6 inline-block">
+            <img
+              src="./src/imgs/dribbble.svg"
+              alt="dribbble"
+              class="w-10 h-10"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!--End contact-->
+
+    <!--Start footer-->
+
+    <footer class="bg-gray-900 py-20 mt-12 text-white">
+      <div class="container flex md:justify-start justify-center items-center">
+        <div class="flex items-center">
+          <img src="./src/imgs/footer-logo.png" alt="logo" class="mr-4" />
+          <p class="text-white capitalize">
+            &copy; 2022 - mint, all right reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!--End footer-->
+
+    <!--start Back to top button-->
+
+    <div
+      class="scroll-top w-8 h-8 text-white bg-main-0 fixed bottom-20 right-10 z-20 p-1 animate-bounce cursor-pointer md:hover:bg-gray-900 md:hover:text-main-0 transition-colors duration-500 ease-in-out hidden"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-full w-full"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </div>
+
+    <!--end Back to top button-->
+
+    <!--JavaScript-->
+    <script src="./src/app.js"></script>
+  </body>
+</html>
